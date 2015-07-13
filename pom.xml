@@ -7,14 +7,14 @@
     <groupId>hive-jdbc-uber</groupId>
     <artifactId>hive-jdbc-uber</artifactId>
     <packaging>jar</packaging>
-    <version>2.2.4.2</version>
+    <version>0.13</version>
 
     <properties>
         <maven.compiler.source>1.7</maven.compiler.source>
         <maven.compiler.target>1.7</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <hive.version>0.14.0.2.2.4.2-2</hive.version>
-        <hadoop.version>2.6.0.2.2.4.2-2</hadoop.version>
+        <hive.version>1.0.0-mapr-1504</hive.version>
+        <hadoop.version>2.5.1-mapr-1503</hadoop.version>
     </properties>
 
     <repositories>
@@ -33,6 +33,17 @@
             <name>HDP Releases</name>
             <url>http://repo.hortonworks.com/content/repositories/releases/</url>
             <layout>default</layout>
+        </repository>
+        <repository>
+          <id>mapr-repo</id>
+          <name>MapR Repository</name>
+          <url>http://repository.mapr.com/maven</url>
+          <releases>
+            <enabled>true</enabled>
+          </releases>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
         </repository>
     </repositories>
 
